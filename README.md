@@ -9,4 +9,4 @@ Microservices:
 -ChatService(TBD)
 -ResourcesManagement(Azure storage)
 -UserManagement(Login Register CRUD Courses Roles)
--LearningService(Questions Personal/Public)
+-LearningHub(Questions Personal/Public)
