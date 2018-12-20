@@ -1,0 +1,14 @@
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\bin\Debug\netcoreapp2.0\SchoolPanda.Data.deps.json
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\bin\Debug\netcoreapp2.0\SchoolPanda.Data.dll
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\bin\Debug\netcoreapp2.0\SchoolPanda.Data.pdb
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\bin\Debug\netcoreapp2.0\Newtonsoft.Json.dll
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\bin\Debug\netcoreapp2.0\SchoolPanda.Domain.dll
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\bin\Debug\netcoreapp2.0\SchoolPanda.Domain.pdb
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\bin\Debug\netcoreapp2.0\Newtonsoft.Json.xml
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\obj\Debug\netcoreapp2.0\SchoolPanda.Data.csprojAssemblyReference.cache
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\obj\Debug\netcoreapp2.0\SchoolPanda.Data.csproj.CoreCompileInputs.cache
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\obj\Debug\netcoreapp2.0\SchoolPanda.Data.AssemblyInfoInputs.cache
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\obj\Debug\netcoreapp2.0\SchoolPanda.Data.AssemblyInfo.cs
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\obj\Debug\netcoreapp2.0\SchoolPanda.Data.csproj.CopyComplete
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\obj\Debug\netcoreapp2.0\SchoolPanda.Data.dll
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Data\obj\Debug\netcoreapp2.0\SchoolPanda.Data.pdb

@@ -1,0 +1,11 @@
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csproj.CoreCompileInputs.cache
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.AssemblyInfoInputs.cache
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.AssemblyInfo.cs
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.deps.json
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.runtimeconfig.json
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.runtimeconfig.dev.json
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.dll
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.pdb
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csprojAssemblyReference.cache
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.dll
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.pdb
