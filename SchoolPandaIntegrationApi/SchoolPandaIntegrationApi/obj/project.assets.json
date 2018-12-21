@@ -12904,11 +12904,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SchoolPandaIntegrationApi\\SchoolPandaIntegrationApi\\SchoolPandaIntegrationApi.csproj",
+      "projectUniqueName": "D:\\SchoolPanda\\SchoolPandaIntegrationApi\\SchoolPandaIntegrationApi\\SchoolPandaIntegrationApi.csproj",
       "projectName": "SchoolPandaIntegrationApi",
-      "projectPath": "D:\\SchoolPandaIntegrationApi\\SchoolPandaIntegrationApi\\SchoolPandaIntegrationApi.csproj",
+      "projectPath": "D:\\SchoolPanda\\SchoolPandaIntegrationApi\\SchoolPandaIntegrationApi\\SchoolPandaIntegrationApi.csproj",
       "packagesPath": "C:\\Users\\Panda\\.nuget\\packages\\",
-      "outputPath": "D:\\SchoolPandaIntegrationApi\\SchoolPandaIntegrationApi\\obj\\",
+      "outputPath": "D:\\SchoolPanda\\SchoolPandaIntegrationApi\\SchoolPandaIntegrationApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12927,8 +12927,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\SchoolPandaIntegrationApi\\SchoolPanda.Application\\SchoolPanda.Application.csproj": {
-              "projectPath": "D:\\SchoolPandaIntegrationApi\\SchoolPanda.Application\\SchoolPanda.Application.csproj"
+            "D:\\SchoolPanda\\SchoolPandaIntegrationApi\\SchoolPanda.Application\\SchoolPanda.Application.csproj": {
+              "projectPath": "D:\\SchoolPanda\\SchoolPandaIntegrationApi\\SchoolPanda.Application\\SchoolPanda.Application.csproj"
             }
           }
         }

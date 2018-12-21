@@ -3471,11 +3471,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SchoolPandaIntegrationApi\\SchoolPanda.Domain\\SchoolPanda.Domain.csproj",
+      "projectUniqueName": "D:\\SchoolPanda\\SchoolPandaIntegrationApi\\SchoolPanda.Domain\\SchoolPanda.Domain.csproj",
       "projectName": "SchoolPanda.Domain",
-      "projectPath": "D:\\SchoolPandaIntegrationApi\\SchoolPanda.Domain\\SchoolPanda.Domain.csproj",
+      "projectPath": "D:\\SchoolPanda\\SchoolPandaIntegrationApi\\SchoolPanda.Domain\\SchoolPanda.Domain.csproj",
       "packagesPath": "C:\\Users\\Panda\\.nuget\\packages\\",
-      "outputPath": "D:\\SchoolPandaIntegrationApi\\SchoolPanda.Domain\\obj\\",
+      "outputPath": "D:\\SchoolPanda\\SchoolPandaIntegrationApi\\SchoolPanda.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
