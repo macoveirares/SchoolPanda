@@ -1,0 +1,16 @@
+D:\DOT NET\UsersManagement\UsersManagement.Application\obj\Debug\netcoreapp2.2\UsersManagement.Application.csprojAssemblyReference.cache
+D:\DOT NET\UsersManagement\UsersManagement.Application\obj\Debug\netcoreapp2.2\UsersManagement.Application.csproj.CoreCompileInputs.cache
+D:\DOT NET\UsersManagement\UsersManagement.Application\obj\Debug\netcoreapp2.2\UsersManagement.Application.AssemblyInfoInputs.cache
+D:\DOT NET\UsersManagement\UsersManagement.Application\obj\Debug\netcoreapp2.2\UsersManagement.Application.AssemblyInfo.cs
+D:\DOT NET\UsersManagement\UsersManagement.Application\bin\Debug\netcoreapp2.2\UsersManagement.Data.dll
+D:\DOT NET\UsersManagement\UsersManagement.Application\bin\Debug\netcoreapp2.2\UsersManagement.Domain.dll
+D:\DOT NET\UsersManagement\UsersManagement.Application\bin\Debug\netcoreapp2.2\UsersManagement.Application.deps.json
+D:\DOT NET\UsersManagement\UsersManagement.Application\bin\Debug\netcoreapp2.2\UsersManagement.Application.dll
+D:\DOT NET\UsersManagement\UsersManagement.Application\bin\Debug\netcoreapp2.2\UsersManagement.Application.pdb
+D:\DOT NET\UsersManagement\UsersManagement.Application\bin\Debug\netcoreapp2.2\Newtonsoft.Json.dll
+D:\DOT NET\UsersManagement\UsersManagement.Application\bin\Debug\netcoreapp2.2\UsersManagement.Data.pdb
+D:\DOT NET\UsersManagement\UsersManagement.Application\bin\Debug\netcoreapp2.2\UsersManagement.Domain.pdb
+D:\DOT NET\UsersManagement\UsersManagement.Application\bin\Debug\netcoreapp2.2\Newtonsoft.Json.xml
+D:\DOT NET\UsersManagement\UsersManagement.Application\obj\Debug\netcoreapp2.2\UsersManagement.Application.csproj.CopyComplete
+D:\DOT NET\UsersManagement\UsersManagement.Application\obj\Debug\netcoreapp2.2\UsersManagement.Application.dll
+D:\DOT NET\UsersManagement\UsersManagement.Application\obj\Debug\netcoreapp2.2\UsersManagement.Application.pdb

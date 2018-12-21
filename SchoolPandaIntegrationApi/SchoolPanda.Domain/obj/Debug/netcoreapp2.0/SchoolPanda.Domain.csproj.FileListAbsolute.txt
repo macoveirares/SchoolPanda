@@ -4,3 +4,12 @@ D:\SchoolPandaIntegrationApi\SchoolPanda.Domain\obj\Debug\netcoreapp2.0\SchoolPa
 D:\SchoolPandaIntegrationApi\SchoolPanda.Domain\obj\Debug\netcoreapp2.0\SchoolPanda.Domain.csproj.CoreCompileInputs.cache
 D:\SchoolPandaIntegrationApi\SchoolPanda.Domain\obj\Debug\netcoreapp2.0\SchoolPanda.Domain.AssemblyInfoInputs.cache
 D:\SchoolPandaIntegrationApi\SchoolPanda.Domain\obj\Debug\netcoreapp2.0\SchoolPanda.Domain.AssemblyInfo.cs
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Domain\bin\Debug\netcoreapp2.0\SchoolPanda.Domain.deps.json
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Domain\bin\Debug\netcoreapp2.0\SchoolPanda.Domain.dll
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Domain\bin\Debug\netcoreapp2.0\SchoolPanda.Domain.pdb
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Domain\obj\Debug\netcoreapp2.0\SchoolPanda.Domain.csprojAssemblyReference.cache
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Domain\obj\Debug\netcoreapp2.0\SchoolPanda.Domain.csproj.CoreCompileInputs.cache
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Domain\obj\Debug\netcoreapp2.0\SchoolPanda.Domain.AssemblyInfoInputs.cache
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Domain\obj\Debug\netcoreapp2.0\SchoolPanda.Domain.AssemblyInfo.cs
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Domain\obj\Debug\netcoreapp2.0\SchoolPanda.Domain.dll
+D:\DOT NET\SchoolPandaIntegrationApi\SchoolPanda.Domain\obj\Debug\netcoreapp2.0\SchoolPanda.Domain.pdb
