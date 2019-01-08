@@ -19,13 +19,30 @@ namespace UsersManagement.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("UsersManagement.Domain.Entities.Course", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.Property<int>("Year");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Courses");
+                });
+
             modelBuilder.Entity("UsersManagement.Domain.Entities.Role", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
@@ -38,19 +55,26 @@ namespace UsersManagement.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Email")
+                        .IsRequired();
 
-                    b.Property<string>("FirstName");
+                    b.Property<string>("FirstName")
+                        .IsRequired();
 
                     b.Property<DateTime>("InsertedDate");
 
-                    b.Property<string>("LastName");
+                    b.Property<string>("LastName")
+                        .IsRequired();
+
+                    b.Property<string>("Password")
+                        .IsRequired();
 
                     b.Property<int>("RoleId");
 
                     b.Property<DateTime>("UpdatedDate");
 
-                    b.Property<string>("Username");
+                    b.Property<string>("Username")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
@@ -59,11 +83,37 @@ namespace UsersManagement.Data.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("UsersManagement.Domain.Entities.UserToCourse", b =>
+                {
+                    b.Property<int>("UserId");
+
+                    b.Property<int>("CourseId");
+
+                    b.HasKey("UserId", "CourseId");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("UsersToCourses");
+                });
+
             modelBuilder.Entity("UsersManagement.Domain.Entities.User", b =>
                 {
                     b.HasOne("UsersManagement.Domain.Entities.Role", "Role")
                         .WithMany()
                         .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("UsersManagement.Domain.Entities.UserToCourse", b =>
+                {
+                    b.HasOne("UsersManagement.Domain.Entities.Course", "Course")
+                        .WithMany("UsersToCourses")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("UsersManagement.Domain.Entities.User", "User")
+                        .WithMany("UsersToCourses")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

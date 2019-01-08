@@ -16,6 +16,7 @@ namespace UsersManagement.Application.Infrastructure
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ICourseService, CourseService>();
         }
     }
 }

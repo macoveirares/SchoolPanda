@@ -1,14 +1,3 @@
-D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csproj.CoreCompileInputs.cache
-D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.AssemblyInfoInputs.cache
-D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.AssemblyInfo.cs
-D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.deps.json
-D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.runtimeconfig.json
-D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.runtimeconfig.dev.json
-D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.dll
-D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.pdb
-D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csprojAssemblyReference.cache
-D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.dll
-D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.pdb
 D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.deps.json
 D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.runtimeconfig.json
 D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.runtimeconfig.dev.json
@@ -30,3 +19,24 @@ D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersMana
 D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.RazorAssemblyInfo.cs
 D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.RazorTargetAssemblyInfo.cache
 D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csproj.CopyComplete
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.deps.json
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.runtimeconfig.json
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.runtimeconfig.dev.json
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.dll
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.pdb
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Application.dll
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Data.dll
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Domain.dll
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Application.pdb
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Data.pdb
+D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Domain.pdb
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csprojAssemblyReference.cache
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csproj.CoreCompileInputs.cache
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.RazorAssemblyInfo.cache
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.RazorAssemblyInfo.cs
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.AssemblyInfoInputs.cache
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.AssemblyInfo.cs
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.RazorTargetAssemblyInfo.cache
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csproj.CopyComplete
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.dll
+D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.pdb
