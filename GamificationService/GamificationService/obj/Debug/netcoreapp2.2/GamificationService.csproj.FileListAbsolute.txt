@@ -1,0 +1,11 @@
+D:\SchoolPanda\GamificationService\GamificationService\bin\Debug\netcoreapp2.2\GamificationService.deps.json
+D:\SchoolPanda\GamificationService\GamificationService\bin\Debug\netcoreapp2.2\GamificationService.runtimeconfig.json
+D:\SchoolPanda\GamificationService\GamificationService\bin\Debug\netcoreapp2.2\GamificationService.runtimeconfig.dev.json
+D:\SchoolPanda\GamificationService\GamificationService\bin\Debug\netcoreapp2.2\GamificationService.dll
+D:\SchoolPanda\GamificationService\GamificationService\bin\Debug\netcoreapp2.2\GamificationService.pdb
+D:\SchoolPanda\GamificationService\GamificationService\obj\Debug\netcoreapp2.2\GamificationService.csprojAssemblyReference.cache
+D:\SchoolPanda\GamificationService\GamificationService\obj\Debug\netcoreapp2.2\GamificationService.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\GamificationService\GamificationService\obj\Debug\netcoreapp2.2\GamificationService.AssemblyInfoInputs.cache
+D:\SchoolPanda\GamificationService\GamificationService\obj\Debug\netcoreapp2.2\GamificationService.AssemblyInfo.cs
+D:\SchoolPanda\GamificationService\GamificationService\obj\Debug\netcoreapp2.2\GamificationService.dll
+D:\SchoolPanda\GamificationService\GamificationService\obj\Debug\netcoreapp2.2\GamificationService.pdb

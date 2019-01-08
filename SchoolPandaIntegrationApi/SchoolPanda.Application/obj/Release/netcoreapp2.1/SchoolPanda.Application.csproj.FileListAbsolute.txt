@@ -1,0 +1,14 @@
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\bin\Release\netcoreapp2.1\SchoolPanda.Application.deps.json
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\bin\Release\netcoreapp2.1\SchoolPanda.Application.dll
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\bin\Release\netcoreapp2.1\SchoolPanda.Application.pdb
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\bin\Release\netcoreapp2.1\SchoolPanda.Data.dll
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\bin\Release\netcoreapp2.1\SchoolPanda.Domain.dll
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\bin\Release\netcoreapp2.1\SchoolPanda.Data.pdb
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\bin\Release\netcoreapp2.1\SchoolPanda.Domain.pdb
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\obj\Release\netcoreapp2.1\SchoolPanda.Application.csprojAssemblyReference.cache
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\obj\Release\netcoreapp2.1\SchoolPanda.Application.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\obj\Release\netcoreapp2.1\SchoolPanda.Application.AssemblyInfoInputs.cache
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\obj\Release\netcoreapp2.1\SchoolPanda.Application.AssemblyInfo.cs
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\obj\Release\netcoreapp2.1\SchoolPanda.Application.csproj.CopyComplete
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\obj\Release\netcoreapp2.1\SchoolPanda.Application.dll
+D:\SchoolPanda\SchoolPandaIntegrationApi\SchoolPanda.Application\obj\Release\netcoreapp2.1\SchoolPanda.Application.pdb

@@ -1,0 +1,9 @@
+D:\SchoolPanda\UsersManagement\UserManagement.Application\bin\Debug\netcoreapp2.0\UserManagement.Application.deps.json
+D:\SchoolPanda\UsersManagement\UserManagement.Application\bin\Debug\netcoreapp2.0\UserManagement.Application.dll
+D:\SchoolPanda\UsersManagement\UserManagement.Application\bin\Debug\netcoreapp2.0\UserManagement.Application.pdb
+D:\SchoolPanda\UsersManagement\UserManagement.Application\obj\Debug\netcoreapp2.0\UserManagement.Application.csprojAssemblyReference.cache
+D:\SchoolPanda\UsersManagement\UserManagement.Application\obj\Debug\netcoreapp2.0\UserManagement.Application.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\UsersManagement\UserManagement.Application\obj\Debug\netcoreapp2.0\UserManagement.Application.AssemblyInfoInputs.cache
+D:\SchoolPanda\UsersManagement\UserManagement.Application\obj\Debug\netcoreapp2.0\UserManagement.Application.AssemblyInfo.cs
+D:\SchoolPanda\UsersManagement\UserManagement.Application\obj\Debug\netcoreapp2.0\UserManagement.Application.dll
+D:\SchoolPanda\UsersManagement\UserManagement.Application\obj\Debug\netcoreapp2.0\UserManagement.Application.pdb

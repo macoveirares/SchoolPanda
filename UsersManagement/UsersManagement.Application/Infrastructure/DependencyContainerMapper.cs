@@ -14,7 +14,6 @@ namespace UsersManagement.Application.Infrastructure
             services.AddDbContext<SchoolPandaContext>(options =>
                 options.UseSqlServer(configuration["ConnectionStrings:DefaultConnection"]));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            //register generic repository
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IUserService, UserService>();
         }

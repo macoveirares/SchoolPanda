@@ -7,3 +7,12 @@ D:\DOT NET\UsersManagement\UsersManagement.Domain\bin\Debug\netcoreapp2.2\UsersM
 D:\DOT NET\UsersManagement\UsersManagement.Domain\bin\Debug\netcoreapp2.2\UsersManagement.Domain.pdb
 D:\DOT NET\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.dll
 D:\DOT NET\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement.Domain\bin\Debug\netcoreapp2.2\UsersManagement.Domain.deps.json
+D:\SchoolPanda\UsersManagement\UsersManagement.Domain\bin\Debug\netcoreapp2.2\UsersManagement.Domain.dll
+D:\SchoolPanda\UsersManagement\UsersManagement.Domain\bin\Debug\netcoreapp2.2\UsersManagement.Domain.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.csprojAssemblyReference.cache
+D:\SchoolPanda\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.AssemblyInfoInputs.cache
+D:\SchoolPanda\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.AssemblyInfo.cs
+D:\SchoolPanda\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.dll
+D:\SchoolPanda\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.pdb

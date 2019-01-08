@@ -1,0 +1,14 @@
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Release\netcoreapp2.1\UsersManagement.deps.json
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Release\netcoreapp2.1\UsersManagement.runtimeconfig.json
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Release\netcoreapp2.1\UsersManagement.runtimeconfig.dev.json
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Release\netcoreapp2.1\UsersManagement.dll
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Release\netcoreapp2.1\UsersManagement.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Release\netcoreapp2.1\UsersManagement.csprojAssemblyReference.cache
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Release\netcoreapp2.1\UsersManagement.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Release\netcoreapp2.1\UsersManagement.RazorAssemblyInfo.cache
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Release\netcoreapp2.1\UsersManagement.RazorAssemblyInfo.cs
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Release\netcoreapp2.1\UsersManagement.AssemblyInfoInputs.cache
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Release\netcoreapp2.1\UsersManagement.AssemblyInfo.cs
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Release\netcoreapp2.1\UsersManagement.RazorTargetAssemblyInfo.cache
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Release\netcoreapp2.1\UsersManagement.dll
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Release\netcoreapp2.1\UsersManagement.pdb

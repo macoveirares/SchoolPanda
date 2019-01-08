@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolPandaIntegrationApi", "SchoolPandaIntegrationApi\SchoolPandaIntegrationApi.csproj", "{132860E2-F0C1-4780-B105-E9B3C9E90FE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolPanda.Application", "SchoolPanda.Application\SchoolPanda.Application.csproj", "{F3ECC586-3FE0-41B8-916E-5F3E52BB2738}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolPanda.Application", "SchoolPanda.Application\SchoolPanda.Application.csproj", "{F3ECC586-3FE0-41B8-916E-5F3E52BB2738}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolPanda.Data", "SchoolPanda.Data\SchoolPanda.Data.csproj", "{D71ECE04-13B9-40D3-9F23-1E0602C328F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolPanda.Data", "SchoolPanda.Data\SchoolPanda.Data.csproj", "{D71ECE04-13B9-40D3-9F23-1E0602C328F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolPanda.Domain", "SchoolPanda.Domain\SchoolPanda.Domain.csproj", "{E82EEF98-AC1E-4E4A-AD73-64596E94563B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolPanda.Domain", "SchoolPanda.Domain\SchoolPanda.Domain.csproj", "{E82EEF98-AC1E-4E4A-AD73-64596E94563B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolPandaIntegrationAPI", "SchoolPandaIntegrationAPI\SchoolPandaIntegrationAPI.csproj", "{5CCB62B2-06E4-4CA9-B01B-5F39521745B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{132860E2-F0C1-4780-B105-E9B3C9E90FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{132860E2-F0C1-4780-B105-E9B3C9E90FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{132860E2-F0C1-4780-B105-E9B3C9E90FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{132860E2-F0C1-4780-B105-E9B3C9E90FE0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F3ECC586-3FE0-41B8-916E-5F3E52BB2738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F3ECC586-3FE0-41B8-916E-5F3E52BB2738}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3ECC586-3FE0-41B8-916E-5F3E52BB2738}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{E82EEF98-AC1E-4E4A-AD73-64596E94563B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E82EEF98-AC1E-4E4A-AD73-64596E94563B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E82EEF98-AC1E-4E4A-AD73-64596E94563B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CCB62B2-06E4-4CA9-B01B-5F39521745B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CCB62B2-06E4-4CA9-B01B-5F39521745B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CCB62B2-06E4-4CA9-B01B-5F39521745B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CCB62B2-06E4-4CA9-B01B-5F39521745B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

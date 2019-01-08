@@ -12,3 +12,19 @@ D:\DOT NET\UsersManagement\UsersManagement.Data\bin\Debug\netcoreapp2.2\UsersMan
 D:\DOT NET\UsersManagement\UsersManagement.Data\obj\Debug\netcoreapp2.2\UsersManagement.Data.csproj.CopyComplete
 D:\DOT NET\UsersManagement\UsersManagement.Data\obj\Debug\netcoreapp2.2\UsersManagement.Data.dll
 D:\DOT NET\UsersManagement\UsersManagement.Data\obj\Debug\netcoreapp2.2\UsersManagement.Data.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\bin\Debug\netcoreapp2.2\UsersManagement.Data.deps.json
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\bin\Debug\netcoreapp2.2\UsersManagement.Data.dll
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\bin\Debug\netcoreapp2.2\UsersManagement.Data.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\bin\Debug\netcoreapp2.2\Newtonsoft.Json.dll
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\bin\Debug\netcoreapp2.2\UsersManagement.Domain.dll
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\bin\Debug\netcoreapp2.2\UsersManagement.Domain.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\bin\Debug\netcoreapp2.2\Newtonsoft.Json.xml
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\obj\Debug\netcoreapp2.2\UsersManagement.Data.csprojAssemblyReference.cache
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\obj\Debug\netcoreapp2.2\UsersManagement.Data.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\obj\Debug\netcoreapp2.2\UsersManagement.Data.AssemblyInfoInputs.cache
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\obj\Debug\netcoreapp2.2\UsersManagement.Data.AssemblyInfo.cs
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\obj\Debug\netcoreapp2.2\UsersManagement.Data.csproj.CopyComplete
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\obj\Debug\netcoreapp2.2\UsersManagement.Data.dll
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\obj\Debug\netcoreapp2.2\UsersManagement.Data.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\bin\Debug\netcoreapp2.2\UsersManagement.Data.runtimeconfig.json
+D:\SchoolPanda\UsersManagement\UsersManagement.Data\bin\Debug\netcoreapp2.2\UsersManagement.Data.runtimeconfig.dev.json

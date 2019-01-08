@@ -9,3 +9,24 @@ D:\DOT NET\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManageme
 D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csprojAssemblyReference.cache
 D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.dll
 D:\DOT NET\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.deps.json
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.runtimeconfig.json
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.runtimeconfig.dev.json
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.dll
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csprojAssemblyReference.cache
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.AssemblyInfoInputs.cache
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.AssemblyInfo.cs
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.dll
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Application.dll
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Data.dll
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Domain.dll
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Application.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Data.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement\bin\Debug\netcoreapp2.2\UsersManagement.Domain.pdb
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.RazorAssemblyInfo.cache
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.RazorAssemblyInfo.cs
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.RazorTargetAssemblyInfo.cache
+D:\SchoolPanda\UsersManagement\UsersManagement\obj\Debug\netcoreapp2.2\UsersManagement.csproj.CopyComplete
