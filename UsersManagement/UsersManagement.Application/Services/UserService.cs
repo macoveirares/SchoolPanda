@@ -15,6 +15,7 @@ namespace UsersManagement.Application.Services
         bool UpdateUser(UserDTO user);
         bool DeleteUser(int userId);
         List<UserDTO> GetUsersByCourse(int courseId);
+        List<RoleDto> GetRoles();
     }
 
     public class UserService : IUserService
@@ -81,5 +82,10 @@ namespace UsersManagement.Application.Services
             var course = courseRepository.Query(x => x.Id == courseId).FirstOrDefault();
             return course.Users.Select(x => (UserDTO)new UserDTO().InjectFrom(x.User)).ToList();
         }
+
+        //public List<RoleDto> GetRoles()
+        //{
+            
+        //}
     }
 }

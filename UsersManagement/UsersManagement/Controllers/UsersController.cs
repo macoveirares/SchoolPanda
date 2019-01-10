@@ -42,5 +42,10 @@ namespace UsersManagement.Controllers
             _userService.UpdateUser((UserDTO)new UserDTO().InjectFrom(userModel));
             return Ok();
         }
+
+        //public ActionResult<RoleModel> GetRoles()
+        //{
+
+        //}
     }
 }
