@@ -1,0 +1,5 @@
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\bin\Debug\netcoreapp2.2\ResourceManagement.Domain.dll
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.2\ResourceManagement.Data.csprojAssemblyReference.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.2\ResourceManagement.Data.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.2\ResourceManagement.Data.AssemblyInfoInputs.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.2\ResourceManagement.Data.AssemblyInfo.cs

@@ -1,0 +1,14 @@
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\obj\Debug\netcoreapp2.1\ResourceManagement.Api.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\obj\Debug\netcoreapp2.1\ResourceManagement.Api.AssemblyInfoInputs.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\obj\Debug\netcoreapp2.1\ResourceManagement.Api.AssemblyInfo.cs
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\bin\Debug\netcoreapp2.1\ResourceManagement.Api.deps.json
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\bin\Debug\netcoreapp2.1\ResourceManagement.Api.runtimeconfig.json
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\bin\Debug\netcoreapp2.1\ResourceManagement.Api.runtimeconfig.dev.json
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\bin\Debug\netcoreapp2.1\ResourceManagement.Api.dll
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\obj\Debug\netcoreapp2.1\ResourceManagement.Api.csprojAssemblyReference.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\obj\Debug\netcoreapp2.1\ResourceManagement.Api.RazorAssemblyInfo.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\obj\Debug\netcoreapp2.1\ResourceManagement.Api.RazorAssemblyInfo.cs
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\obj\Debug\netcoreapp2.1\ResourceManagement.Api.RazorTargetAssemblyInfo.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\bin\Debug\netcoreapp2.1\ResourceManagement.Api.pdb
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\obj\Debug\netcoreapp2.1\ResourceManagement.Api.dll
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Api\obj\Debug\netcoreapp2.1\ResourceManagement.Api.pdb

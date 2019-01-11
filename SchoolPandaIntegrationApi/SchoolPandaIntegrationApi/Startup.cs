@@ -12,8 +12,7 @@ namespace SchoolPandaIntegrationAPI
         {
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
-            // Register the Swagger generator, defining 1 or more Swagger documents
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info
@@ -23,9 +22,6 @@ namespace SchoolPandaIntegrationAPI
 
                 });
                 
-                //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                //c.IncludeXmlComments(xmlPath);
             });
         }
         
