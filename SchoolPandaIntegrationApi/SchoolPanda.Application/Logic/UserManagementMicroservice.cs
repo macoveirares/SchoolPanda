@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
 
 namespace SchoolPanda.Application.Logic
 {
@@ -15,6 +17,7 @@ namespace SchoolPanda.Application.Logic
             if (!string.IsNullOrEmpty(baseUerManagementServiceUrl))
                 baseUSerManagementMicroserviceUrl = baseUerManagementServiceUrl;
             _httpClient = new HttpClient();
+            _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
         public void CreateUser(UserDto user)
@@ -40,7 +43,7 @@ namespace SchoolPanda.Application.Logic
 
         public void AddRole(RoleDto role)
         {
-            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/addRole", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(role)));
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/addRole", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(role), Encoding.UTF8, "application/json"));
             var result = request.Result;
             //check status code
         }

@@ -1,0 +1,14 @@
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\obj\Debug\netcoreapp2.1\ResourceManagement.Application.csprojAssemblyReference.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\obj\Debug\netcoreapp2.1\ResourceManagement.Application.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\obj\Debug\netcoreapp2.1\ResourceManagement.Application.AssemblyInfoInputs.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\obj\Debug\netcoreapp2.1\ResourceManagement.Application.AssemblyInfo.cs
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\bin\Debug\netcoreapp2.1\ResourceManagement.Application.deps.json
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\bin\Debug\netcoreapp2.1\ResourceManagement.Application.dll
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\bin\Debug\netcoreapp2.1\ResourceManagement.Data.dll
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\bin\Debug\netcoreapp2.1\ResourceManagement.Domain.dll
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\bin\Debug\netcoreapp2.1\ResourceManagement.Data.pdb
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\bin\Debug\netcoreapp2.1\ResourceManagement.Domain.pdb
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\obj\Debug\netcoreapp2.1\ResourceManagement.Application.csproj.CopyComplete
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\bin\Debug\netcoreapp2.1\ResourceManagement.Application.pdb
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\obj\Debug\netcoreapp2.1\ResourceManagement.Application.dll
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Application\obj\Debug\netcoreapp2.1\ResourceManagement.Application.pdb

@@ -1,0 +1,12 @@
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\bin\Debug\netcoreapp2.1\ResourceManagement.Data.deps.json
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\bin\Debug\netcoreapp2.1\ResourceManagement.Data.dll
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\bin\Debug\netcoreapp2.1\ResourceManagement.Data.pdb
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\bin\Debug\netcoreapp2.1\ResourceManagement.Domain.dll
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\bin\Debug\netcoreapp2.1\ResourceManagement.Domain.pdb
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.1\ResourceManagement.Data.csprojAssemblyReference.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.1\ResourceManagement.Data.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.1\ResourceManagement.Data.AssemblyInfoInputs.cache
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.1\ResourceManagement.Data.AssemblyInfo.cs
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.1\ResourceManagement.Data.csproj.CopyComplete
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.1\ResourceManagement.Data.dll
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.1\ResourceManagement.Data.pdb
