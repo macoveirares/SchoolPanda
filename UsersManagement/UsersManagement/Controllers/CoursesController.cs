@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Omu.ValueInjecter;
+using System.Collections.Generic;
+using System.Linq;
 using UsersManagement.Application.DTO;
 using UsersManagement.Application.Services;
 using UsersManagement.Models;
@@ -41,6 +43,28 @@ namespace UsersManagement.Controllers
         {
             _courseService.UpdateCourse((CourseDTO)new CourseDTO().InjectFrom(courseModel));
             return Ok();
+        }
+
+        [HttpGet]
+        [Route("/api/v1/getCourses")]
+        public ActionResult<List<CourseModel>> GetCourses()
+        {
+            return _courseService.GetAllCourses().Select(x => (CourseModel)new CourseModel().InjectFrom(x)).ToList();
+        }
+
+        [HttpGet]
+        [Route("/api/v1/getCourse")]
+        public ActionResult<CourseModel> GetCourse([FromBody]int id)
+        {
+            var course = _courseService.GetCourseById(id);
+            return (CourseModel)new CourseModel().InjectFrom(course);
+        }
+
+        [HttpGet]
+        [Route("/api/v1/getCoursesByUser")]
+        public ActionResult<List<CourseModel>> GetCoursesByUser([FromBody]int id)
+        {
+            return _courseService.GetCoursesByUser(id).Select(x => (CourseModel)new CourseModel().InjectFrom(x)).ToList();
         }
     }
 }

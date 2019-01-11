@@ -16,18 +16,23 @@ namespace UsersManagement.Application.Services
         bool DeleteUser(int userId);
         List<UserDTO> GetUsersByCourse(int courseId);
         List<RoleDto> GetRoles();
+        void AddRole(RoleDto role);
+        bool DeleteRole(int roleId);
+        bool UpdateRole(RoleDto role);
     }
 
     public class UserService : IUserService
     {
         private readonly IRepository<User> userRepository;
         private readonly IRepository<Course> courseRepository;
+        private readonly IRepository<Role> roleRepository;
         private readonly IUnitOfWork unitOfWork;
 
-        public UserService(IRepository<User> userRepository, IRepository<Course> courseRepository, IUnitOfWork unitOfWork)
+        public UserService(IRepository<User> userRepository, IRepository<Course> courseRepository, IRepository<Role> roleRepository, IUnitOfWork unitOfWork)
         {
             this.userRepository = userRepository;
             this.courseRepository = courseRepository;
+            this.roleRepository = roleRepository;
             this.unitOfWork = unitOfWork;
         }
 
@@ -83,9 +88,39 @@ namespace UsersManagement.Application.Services
             return course.Users.Select(x => (UserDTO)new UserDTO().InjectFrom(x.User)).ToList();
         }
 
-        //public List<RoleDto> GetRoles()
-        //{
-            
-        //}
+        public List<RoleDto> GetRoles()
+        {
+            return roleRepository.Query().Select(x => (RoleDto)new RoleDto().InjectFrom(x)).ToList();
+        }
+
+        public void AddRole(RoleDto role)
+        {
+            roleRepository.Insert((Role)new Role().InjectFrom(role));
+            unitOfWork.Save();
+        }
+
+        public bool DeleteRole(int roleId)
+        {
+            var roleToDelete = roleRepository.Query(x => x.Id == roleId).FirstOrDefault();
+            if (roleToDelete != null)
+            {
+                roleRepository.Delete(roleToDelete);
+                unitOfWork.Save();
+                return true;
+            }
+            return false;
+        }
+
+        public bool UpdateRole(RoleDto role)
+        {
+            var roleToUpdate = roleRepository.Query(x => x.Id == role.Id).FirstOrDefault();
+            if (roleToUpdate != null)
+            {
+                roleToUpdate.InjectFrom(role);
+                unitOfWork.Save();
+                return true;
+            }
+            return false;
+        }
     }
 }

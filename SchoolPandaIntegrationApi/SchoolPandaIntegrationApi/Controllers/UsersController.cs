@@ -6,6 +6,7 @@ using SchoolPanda.Application.DTO;
 using SchoolPanda.Application.Logic;
 using SchoolPandaIntegrationAPI.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SchoolPandaIntegrationAPI.Controllers
 {
@@ -24,28 +25,53 @@ namespace SchoolPandaIntegrationAPI.Controllers
             _userManagementMicroservice = string.IsNullOrEmpty(userManagementServiceUrl) ? new UserManagementMicroservice() : new UserManagementMicroservice(userManagementServiceUrl);
         }
 
-        [HttpGet]
-        public ActionResult<List<RoleDto>> GetRoles()
-            => _userManagementMicroservice.GetRoles();
-
-        [HttpGet("id")]
-        public ActionResult<List<UserDto>> GetUSers(int id)
-            => _userManagementMicroservice.GetUsers();
-
-        [HttpGet("userId")]
-        public ActionResult<string> GetUserInfo(int userId)
+        [HttpPost]
+        [Route("/api/v1/createUser")]
+        public ActionResult<HttpResponse> AddUser([FromBody]UserModel user)
         {
-
-            return "`";
+            var userDto = (UserDto)new UserDto().InjectFrom(user);
+            _userManagementMicroservice.CreateUser(userDto);
+            return Ok();
         }
 
         [HttpPost]
-        [Route("/api/v1/createUser")]
-        public ActionResult<HttpResponse> AddUser(CreateUserModel user)
+        [Route("/api/v1/createRole")]
+        public ActionResult<HttpResponse> AddRole([FromBody]RoleModel role)
         {
-            var userDto =(UserDto) new UserDto().InjectFrom(user);
-            _userManagementMicroservice.CreateUser(userDto);
+            var roleDto = (RoleDto)new RoleDto().InjectFrom(role);
+            _userManagementMicroservice.AddRole(roleDto);
             return Ok();
+        }
+
+        [HttpPost]
+        [Route("/api/v1/deleteRole")]
+        public ActionResult<HttpResponse> DeleteRole([FromBody]int id)
+        {
+            _userManagementMicroservice.DeleteRole(id);
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("/api/v1/updateRole")]
+        public ActionResult<HttpResponse> UpdateRole([FromBody]RoleDto role)
+        {
+            var roleDto = (RoleDto)new RoleDto().InjectFrom(role);
+            _userManagementMicroservice.UpdateRole(roleDto);
+            return Ok();
+        }
+
+        [HttpGet]
+        [Route("/api/v1/getUsers")]
+        public ActionResult<List<UserModel>> GetUsers()
+        {
+            return _userManagementMicroservice.GetUsers().Select(x => (UserModel)new UserModel().InjectFrom(x)).ToList();
+        }
+
+        [HttpGet]
+        [Route("/api/v1/getRoles")]
+        public ActionResult<List<RoleModel>> GetRoles()
+        {
+            return _userManagementMicroservice.GetRoles().Select(x => (RoleModel)new RoleModel().InjectFrom(x)).ToList();
         }
     }
 }
