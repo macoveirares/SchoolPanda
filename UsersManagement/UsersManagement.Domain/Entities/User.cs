@@ -24,5 +24,6 @@ namespace UsersManagement.Domain.Entities
         public int RoleId { get; set; }
         public virtual Role Role { get; set; }
         public ICollection<UserToCourse> Courses { get; set; }
+        public ICollection<Mark> Marks { get; set; }
     }
 }

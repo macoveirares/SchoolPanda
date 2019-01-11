@@ -21,4 +21,13 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Migrations\20190110204925_AddedMarksTable.Designer.cs">
+      <DependentUpon>20190110204925_AddedMarksTable.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Migrations\20190110215102_AddedMarksListToUser.Designer.cs">
+      <DependentUpon>20190110215102_AddedMarksListToUser.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
 </Project>

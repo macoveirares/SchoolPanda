@@ -17,6 +17,7 @@ namespace UsersManagement.Application.Infrastructure
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICourseService, CourseService>();
+            services.AddScoped<IMarkService, MarkService>();
         }
     }
 }

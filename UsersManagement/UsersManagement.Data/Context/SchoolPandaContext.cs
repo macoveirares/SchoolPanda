@@ -23,6 +23,7 @@ namespace UsersManagement.Data.Context
         public DbSet<Role> Roles { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<UserToCourse> UsersToCourses { get; set; }
+        public DbSet<Mark> Marks { get; set; }
 
         public SchoolPandaContext(DbContextOptions<SchoolPandaContext> options) : base(options) { }
     }

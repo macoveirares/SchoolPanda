@@ -35,6 +35,29 @@ namespace UsersManagement.Data.Migrations
                     b.ToTable("Courses");
                 });
 
+            modelBuilder.Entity("UsersManagement.Domain.Entities.Mark", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("AddedDate");
+
+                    b.Property<int>("CourseId");
+
+                    b.Property<double>("Points");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Marks");
+                });
+
             modelBuilder.Entity("UsersManagement.Domain.Entities.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -96,6 +119,19 @@ namespace UsersManagement.Data.Migrations
                     b.ToTable("UsersToCourses");
                 });
 
+            modelBuilder.Entity("UsersManagement.Domain.Entities.Mark", b =>
+                {
+                    b.HasOne("UsersManagement.Domain.Entities.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("UsersManagement.Domain.Entities.User", "User")
+                        .WithMany("Marks")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("UsersManagement.Domain.Entities.User", b =>
                 {
                     b.HasOne("UsersManagement.Domain.Entities.Role", "Role")
@@ -107,12 +143,12 @@ namespace UsersManagement.Data.Migrations
             modelBuilder.Entity("UsersManagement.Domain.Entities.UserToCourse", b =>
                 {
                     b.HasOne("UsersManagement.Domain.Entities.Course", "Course")
-                        .WithMany("UsersToCourses")
+                        .WithMany("Users")
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("UsersManagement.Domain.Entities.User", "User")
-                        .WithMany("UsersToCourses")
+                        .WithMany("Courses")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
