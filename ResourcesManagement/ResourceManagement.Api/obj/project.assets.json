@@ -4727,6 +4727,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "2.1.0",
           "Newtonsoft.Json": "12.0.1",
           "ResourceManagement.Domain": "1.0.0"
         },

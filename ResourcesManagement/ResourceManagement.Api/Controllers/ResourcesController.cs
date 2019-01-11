@@ -26,7 +26,9 @@ namespace ResourceManagement.Api.Controllers
         {
             return (ResourceModel)new ResourceModel().InjectFrom(_resourceService.GetResource(id));
         }
-
+        
+        [HttpPost]
+        [Route("/api/v1/createResource")]
         public ActionResult<HttpResponse> CreateResource([FromBody] ResourceModel resource)
         {
             _resourceService.CreateResource((ResourceDto)new ResourceDto().InjectFrom(resource));

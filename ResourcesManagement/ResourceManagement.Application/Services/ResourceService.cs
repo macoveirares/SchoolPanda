@@ -46,7 +46,7 @@ namespace ResourceManagement.Application.Services
         public ResourceDto GetResource(int id)
         {
             var entity = _resourceRepository.GetById(id);
-            var resource = (ResourceDto)new Resource().InjectFrom(entity);
+            var resource = (ResourceDto)new ResourceDto().InjectFrom(entity);
             resource.Url = _blobRepository.GetUrlByName(resource.Name);
             return resource;
         }

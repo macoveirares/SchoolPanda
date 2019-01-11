@@ -10,3 +10,5 @@ D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2
 D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.1\ResourceManagement.Data.csproj.CopyComplete
 D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.1\ResourceManagement.Data.dll
 D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\obj\Debug\netcoreapp2.1\ResourceManagement.Data.pdb
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\bin\Debug\netcoreapp2.1\ResourceManagement.Data.runtimeconfig.json
+D:\SchoolPanda\ResourcesManagement\ResourceManagement.Data\bin\Debug\netcoreapp2.1\ResourceManagement.Data.runtimeconfig.dev.json

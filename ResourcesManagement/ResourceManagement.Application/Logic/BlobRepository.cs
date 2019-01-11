@@ -20,7 +20,7 @@ namespace ResourceManagement.Application.Logic
     public class ResourceReference : IBlobReference
     {
         public string BlobContainer
-            => "webservices";
+            => "webservice";
 
         public string ConnectionStringConfigName
             => "StorageConnectionString";
@@ -48,9 +48,9 @@ namespace ResourceManagement.Application.Logic
 
         public BlobRepository(IConfiguration configuration)
         {
+            _configuration = configuration;
             _storageAccount = GetStorageAccount(new T().ConnectionStringConfigName);
             _blobContainer = GetBlobContainer(_storageAccount);
-            _configuration = configuration;
         }
 
         public void UploadBytes(byte[] bytes, string path)
@@ -74,7 +74,7 @@ namespace ResourceManagement.Application.Logic
         private Microsoft.WindowsAzure.Storage.CloudStorageAccount GetStorageAccount(string connectionString)
         {
             var storageAccount = Microsoft.WindowsAzure.Storage.CloudStorageAccount.Parse(
-               _configuration["ConnectionStrings:StorageConnectionString"]);
+               _configuration["Storage:ConnectionString"]);
 
             Debug.Assert(storageAccount != null, "Culdn't connect to Storage Account");
             return storageAccount;
