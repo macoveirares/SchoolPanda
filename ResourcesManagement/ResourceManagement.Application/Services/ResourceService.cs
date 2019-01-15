@@ -3,8 +3,7 @@ using ResourceManagement.Application.DTO;
 using ResourceManagement.Application.Logic;
 using ResourceManagement.Data.Infrastructure;
 using ResourceManagement.Domain.Entities;
-using System;
-using System.Collections.Generic;
+using System.Linq;
 
 namespace ResourceManagement.Application.Services
 {
@@ -13,6 +12,7 @@ namespace ResourceManagement.Application.Services
         void CreateResource(ResourceDto resource);
         void DeleteResource(int id);
         ResourceDto GetResource(int id);
+        ResourcesDetails GetAllLabs(int userId);
     }
 
     public class ResourceService : IResourceService
@@ -20,12 +20,14 @@ namespace ResourceManagement.Application.Services
         private readonly IRepository<Resource> _resourceRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IBlobRepository<ResourceReference> _blobRepository;
+        private readonly UserManagementMicroservice userManagementMicroservice;
 
         public ResourceService(IRepository<Resource> resourceRepository, IUnitOfWork unitOfWork, IBlobRepository<ResourceReference> blobRepository)
         {
             _resourceRepository = resourceRepository;
             _unitOfWork = unitOfWork;
             _blobRepository = blobRepository;
+            userManagementMicroservice = new UserManagementMicroservice();
         }
 
         public void CreateResource(ResourceDto resource)
@@ -41,6 +43,15 @@ namespace ResourceManagement.Application.Services
             var entity = _resourceRepository.GetById(id);
             _resourceRepository.Delete(entity);
             _unitOfWork.Save();
+        }
+
+        public ResourcesDetails GetAllLabs(int userId)
+        {
+            var details = new ResourcesDetails();
+            var courses = userManagementMicroservice.GetCourseByUser(userId);
+            var resources = _resourceRepository.Query(a => courses.Select(a => a.Id).ToList().Contains(a.CourseId.Value)).ToList();
+
+            return details;
         }
 
         public ResourceDto GetResource(int id)

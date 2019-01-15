@@ -6,5 +6,6 @@ namespace ResourceManagement.Domain.Entities
     {
         public string Name { get; set; }
         public int Size { get; set; }
+        public int? CourseId { get; set; }
     }
 }

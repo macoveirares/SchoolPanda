@@ -2,9 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Omu.ValueInjecter;
 using ResourceManagement.Api.Models;
-using ResourceManagement.Application.DTO;
 using ResourceManagement.Application.Services;
-using System.Collections.Generic;
 
 namespace ResourceManagement.Api.Controllers
 {
@@ -19,7 +17,7 @@ namespace ResourceManagement.Api.Controllers
         {
             _resourceService = resourceService;
         }
-
+        
         [HttpPost]
         [Route("/api/v1/getresource")]
         public ActionResult<ResourceModel> GetResource([FromBody]int id)
@@ -29,10 +27,17 @@ namespace ResourceManagement.Api.Controllers
         
         [HttpPost]
         [Route("/api/v1/createResource")]
-        public ActionResult<HttpResponse> CreateResource([FromBody] ResourceModel resource)
+        public void CreateResource([FromBody] IFormFile formData)
         {
-            _resourceService.CreateResource((ResourceDto)new ResourceDto().InjectFrom(resource));
-            return Ok();
+            //_resourceService.CreateResource((ResourceDto)new ResourceDto().InjectFrom(resource));
+            //return Ok();
+        }
+        
+        [HttpPost]
+        [Route("/api/v1/getallLabs")]
+        public void GetAllLabs([FromBody] ResourceInfo resourceInfo)
+        {
+
         }
     }
 }

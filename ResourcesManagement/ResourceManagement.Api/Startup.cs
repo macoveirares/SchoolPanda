@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ResourceManagement.Api.Filters;
 using ResourceManagement.Application.Infrastructure;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -31,6 +32,7 @@ namespace ResourceManagement.Api
                     Title = "SchoolPanda Resources API",
 
                 });
+                c.OperationFilter<FileCreationFilter>();
             });
             DependencyContainerMapper.RegisterServices(services, Configuration);
         }

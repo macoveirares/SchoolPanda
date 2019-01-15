@@ -25,6 +25,8 @@ namespace ResourceManagement.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("CourseId");
+
                     b.Property<DateTime>("InsertedDate");
 
                     b.Property<string>("Name");
