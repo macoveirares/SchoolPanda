@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20190116233050_AddedAttendacesTable.cs" />
+    <Compile Remove="Migrations\20190116233050_AddedAttendacesTable.Designer.cs" />
+    <Compile Remove="Migrations\20190116235407_AttendacesTable.cs" />
+    <Compile Remove="Migrations\20190116235407_AttendacesTable.Designer.cs" />
+    <Compile Remove="Migrations\20190116235605_attendence2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0" />
@@ -27,6 +35,12 @@
     </Compile>
     <Compile Update="Migrations\20190110215102_AddedMarksListToUser.Designer.cs">
       <DependentUpon>20190110215102_AddedMarksListToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Migrations\20190116235956_AddAttendacesTable.Designer.cs">
+      <DependentUpon>20190116235956_AddAttendacesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Migrations\20190117004841_AddedGroupAndYearToUser.Designer.cs">
+      <DependentUpon>20190117004841_AddedGroupAndYearToUser.cs</DependentUpon>
     </Compile>
   </ItemGroup>
 

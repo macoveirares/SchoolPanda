@@ -19,6 +19,29 @@ namespace UsersManagement.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("UsersManagement.Domain.Entities.Attendance", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("AddedDate");
+
+                    b.Property<int>("CourseId");
+
+                    b.Property<int>("StudentId");
+
+                    b.Property<int>("TeacherId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("Attendances");
+                });
+
             modelBuilder.Entity("UsersManagement.Domain.Entities.Course", b =>
                 {
                     b.Property<int>("Id")
@@ -84,6 +107,9 @@ namespace UsersManagement.Data.Migrations
                     b.Property<string>("FirstName")
                         .IsRequired();
 
+                    b.Property<string>("Group")
+                        .IsRequired();
+
                     b.Property<DateTime>("InsertedDate");
 
                     b.Property<string>("LastName")
@@ -98,6 +124,8 @@ namespace UsersManagement.Data.Migrations
 
                     b.Property<string>("Username")
                         .IsRequired();
+
+                    b.Property<int>("Year");
 
                     b.HasKey("Id");
 
@@ -117,6 +145,19 @@ namespace UsersManagement.Data.Migrations
                     b.HasIndex("CourseId");
 
                     b.ToTable("UsersToCourses");
+                });
+
+            modelBuilder.Entity("UsersManagement.Domain.Entities.Attendance", b =>
+                {
+                    b.HasOne("UsersManagement.Domain.Entities.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("UsersManagement.Domain.Entities.User", "Student")
+                        .WithMany("StudentAttendances")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("UsersManagement.Domain.Entities.Mark", b =>

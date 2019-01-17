@@ -21,9 +21,16 @@ namespace UsersManagement.Domain.Entities
         [Required]
         public string LastName { get; set; }
 
+        [Required]
+        public string Group { get; set; }
+
+        [Required]
+        public int Year { get; set; }
+
         public int RoleId { get; set; }
         public virtual Role Role { get; set; }
         public ICollection<UserToCourse> Courses { get; set; }
         public ICollection<Mark> Marks { get; set; }
+        public ICollection<Attendance> StudentAttendances { get; set; }
     }
 }
