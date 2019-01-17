@@ -24,3 +24,4 @@ D:\work\SchoolPanda\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2
 D:\work\SchoolPanda\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.AssemblyInfo.cs
 D:\work\SchoolPanda\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.dll
 D:\work\SchoolPanda\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.pdb
+D:\DOT NET\UsersManagement\UsersManagement.Domain\obj\Debug\netcoreapp2.2\UsersManagement.Domain.csprojAssemblyReference.cache

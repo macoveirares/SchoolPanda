@@ -8,6 +8,8 @@
         public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Group { get; set; }
+        public int Year { get; set; }
         public int RoleId { get; set; }
     }
 }

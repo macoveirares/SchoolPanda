@@ -74,14 +74,14 @@ namespace SchoolPandaIntegrationAPI.Controllers
             return _userManagementMicroservice.GetRoles().Select(x => (RoleModel)new RoleModel().InjectFrom(x)).ToList();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getUserMarks")]
         public ActionResult<List<MarkModel>> GetUserMarks([FromBody]int id)
         {
             return _userManagementMicroservice.GetUserMarks(id).Select(x => (MarkModel)new MarkModel().InjectFrom(x)).ToList();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getUserAttendances")]
         public ActionResult<List<AttendanceModel>> GetUserAttendances([FromBody]int id)
         {
@@ -147,11 +147,19 @@ namespace SchoolPandaIntegrationAPI.Controllers
             return Ok();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getUserCourses")]
         public ActionResult<List<CourseModel>> GetUserCourses([FromBody]int id)
         {
             return _userManagementMicroservice.GetUserCourses(id).Select(x => (CourseModel)new CourseModel().InjectFrom(x)).ToList();
+        }
+
+        [HttpPost]
+        [Route("/api/v1/login")]
+        public ActionResult<HttpResponse> Login([FromBody] LoginModel loginModel)
+        {
+            _userManagementMicroservice.Login(loginModel.Username, loginModel.Password);
+            return Ok();
         }
     }
 }

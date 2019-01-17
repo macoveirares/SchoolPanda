@@ -107,8 +107,7 @@ namespace UsersManagement.Data.Migrations
                     b.Property<string>("FirstName")
                         .IsRequired();
 
-                    b.Property<string>("Group")
-                        .IsRequired();
+                    b.Property<string>("Group");
 
                     b.Property<DateTime>("InsertedDate");
 
