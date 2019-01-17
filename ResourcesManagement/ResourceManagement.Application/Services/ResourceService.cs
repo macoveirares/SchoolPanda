@@ -3,6 +3,7 @@ using ResourceManagement.Application.DTO;
 using ResourceManagement.Application.Logic;
 using ResourceManagement.Data.Infrastructure;
 using ResourceManagement.Domain.Entities;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ResourceManagement.Application.Services
@@ -13,6 +14,7 @@ namespace ResourceManagement.Application.Services
         void DeleteResource(int id);
         ResourceDto GetResource(int id);
         ResourcesDetails GetAllLabs(int userId);
+        ResourcesDetails GetCourseResources(int userId, int courseId);
     }
 
     public class ResourceService : IResourceService
@@ -35,7 +37,7 @@ namespace ResourceManagement.Application.Services
             var entity = (Resource)new Resource().InjectFrom(resource);
             entity.Id = 0;
             _resourceRepository.Insert(entity);
-            _unitOfWork.Save();   
+            _unitOfWork.Save();
         }
 
         public void DeleteResource(int id)
@@ -49,8 +51,30 @@ namespace ResourceManagement.Application.Services
         {
             var details = new ResourcesDetails();
             var courses = userManagementMicroservice.GetCourseByUser(userId);
-            var resources = _resourceRepository.Query(a => courses.Select(a => a.Id).ToList().Contains(a.CourseId.Value)).ToList();
+            var resources = _resourceRepository.Query(a => courses.Select(b => b.Id).ToList().Contains(a.CourseId.Value)).ToList();
+            details.Resources = new List<ResourceDetails>();
+            foreach (var item in resources)
+            {
+                var temp = (ResourceDetails)new ResourceDetails().InjectFrom(item);
+                details.Resources.Add(temp);
+            }
+            return details;
+        }
 
+        public ResourcesDetails GetCourseResources(int userId, int courseId)
+        {
+            var courses = userManagementMicroservice.GetCourseByUser(userId);
+            if (!courses.Select(a => a.Id).Contains(courseId))
+            {
+                return new ResourcesDetails() { Resources = new List<ResourceDetails>() };
+            }
+            var resources = _resourceRepository.Query(a => a.CourseId == courseId).ToList();
+            var details = new ResourcesDetails() { Resources = new List<ResourceDetails>() };
+            foreach(var item in resources)
+            {
+                var temp = (ResourceDetails)new ResourceDetails().InjectFrom(item);
+                details.Resources.Add(temp);
+            }
             return details;
         }
 
