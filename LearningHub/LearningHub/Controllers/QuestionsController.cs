@@ -1,4 +1,6 @@
 ﻿using LearningHub.Application.Services;
+using LearningHub.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearningHub.Controllers
@@ -17,11 +19,17 @@ namespace LearningHub.Controllers
 
         [HttpPost]
         [Route("/api/v1/addQuestion")]
-        public void AddQuestion()
+        public ActionResult<HttpResponse> AddQuestion([FromBody] AddQuestionModel addQuestionModel) 
         {
 
+            return Ok();
         }
 
-
+        [HttpPost]
+        [Route("/api/v1/getQuestions")]
+        public ActionResult<QuestionModel> GetQuestions([FromBody] GetQuestionsModel questionsModel)
+        {
+            
+        }
     }
 }

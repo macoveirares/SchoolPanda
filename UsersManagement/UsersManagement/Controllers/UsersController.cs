@@ -48,21 +48,21 @@ namespace UsersManagement.Controllers
             return Ok();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getUsers")]
         public ActionResult<List<UserModel>> GetUsers()
         {
             return _userService.GetAllUsers().Select(x => (UserModel)new UserModel().InjectFrom(x)).ToList();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getRoles")]
         public ActionResult<List<RoleModel>> GetRoles()
         {
             return _userService.GetRoles().Select(x => (RoleModel)new RoleModel().InjectFrom(x)).ToList();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getUser")]
         public ActionResult<UserModel> GetUser([FromBody]int id)
         {
@@ -70,7 +70,7 @@ namespace UsersManagement.Controllers
             return (UserModel)new UserModel().InjectFrom(user);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getUsersByCourse")]
         public ActionResult<List<UserModel>> GetUsersByCourse([FromBody]int id)
         {
@@ -101,7 +101,7 @@ namespace UsersManagement.Controllers
             return Ok();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getMark")]
         public ActionResult<MarkModel> GetMark([FromBody]int id)
         {
@@ -109,7 +109,7 @@ namespace UsersManagement.Controllers
             return (MarkModel)new MarkModel().InjectFrom(mark);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getUserMarks")]
         public ActionResult<List<MarkModel>> GetUserMarks([FromBody]int id)
         {
@@ -140,7 +140,7 @@ namespace UsersManagement.Controllers
             return Ok();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getUserAttendances")]
         public ActionResult<List<AttendanceModel>> GetUserAttendances([FromBody]int id)
         {
@@ -173,9 +173,9 @@ namespace UsersManagement.Controllers
 
         [HttpPost]
         [Route("/api/v1/login")]
-        public ActionResult<HttpResponse> Login([FromBody]string username, [FromBody]string password)
+        public ActionResult<HttpResponse> Login([FromBody] LoginModel loginModel)
         {
-            var userId = _userService.Login(username, password);
+            var userId = _userService.Login(loginModel.Username, loginModel.Password);
             if (userId != 0)
                 return Ok();
             return StatusCode((int)HttpStatusCode.Forbidden, "");

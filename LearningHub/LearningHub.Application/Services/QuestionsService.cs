@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using LearningHub.Data.Infrastructure;
+using LearningHub.Domain.Entities;
+using System;
 
 namespace LearningHub.Application.Services
 {
     public interface IQuestionsService
     {
-        void AddQuestions();
+        void AddQuestion(string question, int userId, int type, int addressedTo);
         void AddAnswer();
         void GetQuestions();
         void GetPrivateQuestions();
@@ -14,19 +14,40 @@ namespace LearningHub.Application.Services
 
     class QuestionsService : IQuestionsService
     {
+        private readonly IRepository<Questions> _questionsRepository;
+        private readonly IUnitOfWork _unitOfWork;
+
+        public QuestionsService(IRepository<Questions> questionsRepository, IUnitOfWork unitOfWork)
+        {
+            _questionsRepository = questionsRepository;
+            _unitOfWork = unitOfWork;
+        }
+
         public void AddAnswer()
         {
             throw new NotImplementedException();
         }
 
-        public void AddQuestions()
+        public void AddQuestion(string question, int userId, int type, int addressedTo)
         {
-            throw new NotImplementedException();
+            var questionEntity = new Questions() {
+                Question = question,
+                UserId = userId,
+                Type = type,
+                AddressedToUserId = addressedTo
+            };
+            _questionsRepository.Insert(questionEntity);
+            _unitOfWork.Save();
         }
 
         public void GetPrivateQuestions()
         {
-            throw new NotImplementedException();
+
+        }
+
+        public void GetPrivatequestionsForProf()
+        {
+
         }
 
         public void GetQuestions()

@@ -45,14 +45,14 @@ namespace UsersManagement.Controllers
             return Ok();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getCourses")]
         public ActionResult<List<CourseModel>> GetCourses()
         {
             return _courseService.GetAllCourses().Select(x => (CourseModel)new CourseModel().InjectFrom(x)).ToList();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getCourse")]
         public ActionResult<CourseModel> GetCourse([FromBody]int id)
         {
@@ -60,7 +60,7 @@ namespace UsersManagement.Controllers
             return (CourseModel)new CourseModel().InjectFrom(course);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/v1/getCoursesByUser")]
         public ActionResult<List<CourseModel>> GetCoursesByUser([FromBody]int id)
         {

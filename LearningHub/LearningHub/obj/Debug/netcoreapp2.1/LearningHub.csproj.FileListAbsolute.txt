@@ -12,3 +12,10 @@ D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.Razor
 D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.pdb
 D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.dll
 D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.pdb
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.Application.dll
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.Data.dll
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.Domain.dll
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.Application.pdb
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.Data.pdb
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.Domain.pdb
+D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.csproj.CopyComplete
