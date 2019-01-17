@@ -21,10 +21,8 @@ namespace UsersManagement.Domain.Entities
         [Required]
         public string LastName { get; set; }
 
-        [Required]
         public string Group { get; set; }
 
-        [Required]
         public int Year { get; set; }
 
         public int RoleId { get; set; }

@@ -21,6 +21,10 @@ namespace UsersManagement.Models
         [Required, MaxLength(50)]
         public string Password { get; set; }
 
+        public string Group { get; set; }
+
+        public int Year { get; set; }
+
         [Required]
         public int RoleId { get; set; }
     }

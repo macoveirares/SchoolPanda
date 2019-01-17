@@ -45,7 +45,7 @@ namespace UsersManagement.Controllers
             return Ok();
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("/api/v1/getCourses")]
         public ActionResult<List<CourseModel>> GetCourses()
         {

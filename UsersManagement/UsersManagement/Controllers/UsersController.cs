@@ -48,14 +48,14 @@ namespace UsersManagement.Controllers
             return Ok();
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("/api/v1/getUsers")]
         public ActionResult<List<UserModel>> GetUsers()
         {
             return _userService.GetAllUsers().Select(x => (UserModel)new UserModel().InjectFrom(x)).ToList();
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("/api/v1/getRoles")]
         public ActionResult<List<RoleModel>> GetRoles()
         {
