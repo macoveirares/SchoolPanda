@@ -19,6 +19,13 @@ namespace UsersManagement.Application.Services
         void AddRole(RoleDto role);
         bool DeleteRole(int roleId);
         bool UpdateRole(RoleDto role);
+        void AddAttendance(AttendanceDTO attendance);
+        bool DeleteAttendance(int attendanceId);
+        bool UpdateAttendance(AttendanceDTO attendance);
+        List<AttendanceDTO> GetUserAttendances(int userId);
+        List<AttendanceDTO> GetAttendancesByCourse(int courseId);
+        List<AttendanceDTO> GetUserAttendancesByCourse(int userId, int courseId);
+        int Login(string username, string password);
     }
 
     public class UserService : IUserService
@@ -26,13 +33,15 @@ namespace UsersManagement.Application.Services
         private readonly IRepository<User> userRepository;
         private readonly IRepository<Course> courseRepository;
         private readonly IRepository<Role> roleRepository;
+        private readonly IRepository<Attendance> attendanceRepository;
         private readonly IUnitOfWork unitOfWork;
 
-        public UserService(IRepository<User> userRepository, IRepository<Course> courseRepository, IRepository<Role> roleRepository, IUnitOfWork unitOfWork)
+        public UserService(IRepository<User> userRepository, IRepository<Course> courseRepository, IRepository<Role> roleRepository, IRepository<Attendance> attendanceRepository, IUnitOfWork unitOfWork)
         {
             this.userRepository = userRepository;
             this.courseRepository = courseRepository;
             this.roleRepository = roleRepository;
+            this.attendanceRepository = attendanceRepository;
             this.unitOfWork = unitOfWork;
         }
 
@@ -121,6 +130,63 @@ namespace UsersManagement.Application.Services
                 return true;
             }
             return false;
+        }
+
+        public void AddAttendance(AttendanceDTO attendance)
+        {
+            attendanceRepository.Insert((Attendance)new Attendance().InjectFrom(attendance));
+            unitOfWork.Save();
+        }
+
+        public bool DeleteAttendance(int attendanceId)
+        {
+            var attendanceToDelete = attendanceRepository.Query(x => x.Id == attendanceId).FirstOrDefault();
+            if (attendanceToDelete != null)
+            {
+                attendanceRepository.Delete(attendanceToDelete);
+                unitOfWork.Save();
+                return true;
+            }
+            return false;
+        }
+
+        public bool UpdateAttendance(AttendanceDTO attendance)
+        {
+            var attendanceToUpdate = attendanceRepository.Query(x => x.Id == attendance.Id).FirstOrDefault();
+            if (attendanceToUpdate != null)
+            {
+                attendanceRepository.InjectFrom(attendanceToUpdate);
+                unitOfWork.Save();
+                return true;
+            }
+            return false;
+        }
+
+        public List<AttendanceDTO> GetUserAttendances(int userId)
+        {
+            var user = userRepository.Query(x => x.Id == userId).FirstOrDefault();
+            return user.StudentAttendances.Select(x => (AttendanceDTO)new AttendanceDTO().InjectFrom(x)).ToList();
+        }
+
+        public List<AttendanceDTO> GetAttendancesByCourse(int courseId)
+        {
+            return attendanceRepository.Query(x => x.CourseId == courseId).Select(x => (AttendanceDTO)new AttendanceDTO().InjectFrom(x)).ToList();
+        }
+
+        public List<AttendanceDTO> GetUserAttendancesByCourse(int userId, int courseId)
+        {
+            var user = userRepository.Query(x => x.Id == userId).FirstOrDefault();
+            return user.StudentAttendances.Where(x => x.CourseId == courseId).Select(x => (AttendanceDTO)new AttendanceDTO().InjectFrom(x)).ToList();
+        }
+
+        public int Login(string username, string password)
+        {
+            var user = userRepository.Query(x => x.Username == username && x.Password == x.Password).FirstOrDefault();
+            if (user != null)
+            {
+                return user.Id;
+            }
+            return 0;
         }
     }
 }

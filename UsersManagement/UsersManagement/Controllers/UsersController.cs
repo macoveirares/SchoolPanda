@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Omu.ValueInjecter;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using UsersManagement.Application.DTO;
 using UsersManagement.Application.Services;
 using UsersManagement.Models;
@@ -139,5 +140,45 @@ namespace UsersManagement.Controllers
             return Ok();
         }
 
+        [HttpGet]
+        [Route("/api/v1/getUserAttendances")]
+        public ActionResult<List<AttendanceModel>> GetUserAttendances([FromBody]int id)
+        {
+            return _userService.GetUserAttendances(id).Select(x => (AttendanceModel)new AttendanceModel().InjectFrom(x)).ToList();
+        }
+
+        [HttpPost]
+        [Route("/api/v1/addAttendance")]
+        public ActionResult<HttpResponse> AddAttendance([FromBody]AttendanceModel attendanceModel)
+        {
+            _userService.AddAttendance((AttendanceDTO)new AttendanceDTO().InjectFrom(attendanceModel));
+            return Ok();
+        }
+
+        [HttpPost()]
+        [Route("/api/v1/deleteAttendance")]
+        public ActionResult<HttpResponse> DeleteAttendance([FromBody]int id)
+        {
+            _userService.DeleteAttendance(id);
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("/api/v1/updateAttendance")]
+        public ActionResult<HttpResponse> UpdateAttendance([FromBody]AttendanceModel attendanceModel)
+        {
+            _userService.UpdateAttendance((AttendanceDTO)new AttendanceDTO().InjectFrom(attendanceModel));
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("/api/v1/login")]
+        public ActionResult<HttpResponse> Login([FromBody]string username, [FromBody]string password)
+        {
+            var userId = _userService.Login(username, password);
+            if (userId != 0)
+                return Ok();
+            return StatusCode((int)HttpStatusCode.Forbidden, "");
+        }
     }
 }

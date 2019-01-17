@@ -62,6 +62,27 @@ namespace SchoolPanda.Application.Logic
             //check status code
         }
 
+        public void AddCourse(CourseDto course)
+        {
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/addCourse", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(course), Encoding.UTF8, "application/json"));
+            var result = request.Result;
+            //check status code
+        }
+
+        public void DeleteCourse(int courseId)
+        {
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/deleteCourse", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(courseId)));
+            var result = request.Result;
+            //check status code
+        }
+
+        public void UpdateCourse(CourseDto course)
+        {
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/updateCourse", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(course)));
+            var result = request.Result;
+            //check status code
+        }
+
         public List<UserDto> GetUsers()
         {
             var request = _httpClient.GetAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getUsers");
@@ -77,6 +98,60 @@ namespace SchoolPanda.Application.Logic
             var result = request.Result;
             var usersList = result.Content.ReadAsStringAsync().Result;
             return Newtonsoft.Json.JsonConvert.DeserializeObject<List<RoleDto>>(usersList);
+            //check status code
+        }
+
+        public List<CourseDto> GetCourses()
+        {
+            var request = _httpClient.GetAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getCourses");
+            var result = request.Result;
+            var coursesList = result.Content.ReadAsStringAsync().Result;
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<CourseDto>>(coursesList);
+            //check status code
+        }
+
+        public List<MarkDto> GetUserMarks(int id)
+        {
+            var request = _httpClient.GetAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getUserMarks");
+            var result = request.Result;
+            var marksList = result.Content.ReadAsStringAsync().Result;
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<MarkDto>>(marksList);
+        }
+
+        public List<AttendanceDto> GetUserAttendances(int id)
+        {
+            var request = _httpClient.GetAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getUserAttendances");
+            var result = request.Result;
+            var attendancesList = result.Content.ReadAsStringAsync().Result;
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<AttendanceDto>>(attendancesList);
+        }
+
+        public List<CourseDto> GetUserCourses(int id)
+        {
+            var request = _httpClient.GetAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getCoursesByUser");
+            var result = request.Result;
+            var coursesList = result.Content.ReadAsStringAsync().Result;
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<CourseDto>>(coursesList);
+        }
+
+        public void AddAttendance(AttendanceDto attendance)
+        {
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/addAttendance", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(attendance), Encoding.UTF8, "application/json"));
+            var result = request.Result;
+            //check status code
+        }
+
+        public void DeleteAttendance(int attendanceId)
+        {
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/deleteAttendance", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(attendanceId)));
+            var result = request.Result;
+            //check status code
+        }
+
+        public void UpdateAttendance(AttendanceDto attendance)
+        {
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/updateAttendance", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(attendance)));
+            var result = request.Result;
             //check status code
         }
 
