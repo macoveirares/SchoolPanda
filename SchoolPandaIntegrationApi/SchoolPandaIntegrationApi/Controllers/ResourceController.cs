@@ -50,7 +50,13 @@ namespace SchoolPandaIntegrationAPI.Controllers
         public ActionResult<List<ResourceModel>> GetCourseResources(int userId, int courseId)
         {
             var resourceModel = new List<ResourceModel>();
-            var resources = _resourceManagementMicroservice.
+            var resources = _resourceManagementMicroservice.GetCourseResources(userId, courseId);
+            foreach(var item in resources)
+            {
+                var temp = (ResourceModel)new ResourceModel().InjectFrom(item);
+                resourceModel.Add(temp);
+            }
+            return resourceModel;
         }
     }
 }

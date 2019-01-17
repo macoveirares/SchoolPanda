@@ -1,0 +1,14 @@
+D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.csprojAssemblyReference.cache
+D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.AssemblyInfoInputs.cache
+D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.AssemblyInfo.cs
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.deps.json
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.runtimeconfig.json
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.runtimeconfig.dev.json
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.dll
+D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.RazorAssemblyInfo.cache
+D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.RazorAssemblyInfo.cs
+D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.RazorTargetAssemblyInfo.cache
+D:\SchoolPanda\LearningHub\LearningHub\bin\Debug\netcoreapp2.1\LearningHub.pdb
+D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.dll
+D:\SchoolPanda\LearningHub\LearningHub\obj\Debug\netcoreapp2.1\LearningHub.pdb

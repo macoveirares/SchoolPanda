@@ -1,0 +1,6 @@
+D:\SchoolPanda\LearningHub\LearningHub.Application\bin\Debug\netcoreapp2.2\LearningHub.Application.deps.json
+D:\SchoolPanda\LearningHub\LearningHub.Application\bin\Debug\netcoreapp2.2\LearningHub.Application.dll
+D:\SchoolPanda\LearningHub\LearningHub.Application\obj\Debug\netcoreapp2.2\LearningHub.Application.csprojAssemblyReference.cache
+D:\SchoolPanda\LearningHub\LearningHub.Application\obj\Debug\netcoreapp2.2\LearningHub.Application.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\LearningHub\LearningHub.Application\obj\Debug\netcoreapp2.2\LearningHub.Application.AssemblyInfoInputs.cache
+D:\SchoolPanda\LearningHub\LearningHub.Application\obj\Debug\netcoreapp2.2\LearningHub.Application.AssemblyInfo.cs

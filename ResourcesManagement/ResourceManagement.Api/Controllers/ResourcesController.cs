@@ -28,7 +28,8 @@ namespace ResourceManagement.Api.Controllers
 
         [HttpPost]
         [Route("/api/v1/createResource")]
-        public void CreateResource([FromBody] IFormFile formData)
+        [Consumes("multipart/form-data")]
+        public void CreateResource(IFormFile formData)
         {
             //_resourceService.CreateResource((ResourceDto)new ResourceDto().InjectFrom(resource));
             //return Ok();
