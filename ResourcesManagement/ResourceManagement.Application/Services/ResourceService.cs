@@ -57,6 +57,8 @@ namespace ResourceManagement.Application.Services
             foreach (var item in resources)
             {
                 var temp = (ResourceDetails)new ResourceDetails().InjectFrom(item);
+                var courseName = courses.Where(a => a.Id == temp.CourseId).FirstOrDefault().Name;
+                temp.CourseName = courseName;
                 details.Resources.Add(temp);
             }
             return details;
@@ -74,6 +76,8 @@ namespace ResourceManagement.Application.Services
             foreach(var item in resources)
             {
                 var temp = (ResourceDetails)new ResourceDetails().InjectFrom(item);
+                var courseName = courses.Where(a => a.Id == temp.CourseId).FirstOrDefault().Name;
+                temp.CourseName = courseName;
                 details.Resources.Add(temp);
             }
             return details;
