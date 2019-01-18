@@ -6,5 +6,6 @@
         public int Type { get; set; }
         public int AddressedTo { get; set; }
         public string Question { get; set; }
+        public string Answer { get; set; }
     }
 }
