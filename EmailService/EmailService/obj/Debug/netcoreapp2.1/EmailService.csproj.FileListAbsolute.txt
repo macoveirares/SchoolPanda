@@ -1,0 +1,16 @@
+D:\SchoolPanda\EmailService\EmailService\bin\Debug\netcoreapp2.1\EmailService.deps.json
+D:\SchoolPanda\EmailService\EmailService\bin\Debug\netcoreapp2.1\EmailService.runtimeconfig.json
+D:\SchoolPanda\EmailService\EmailService\bin\Debug\netcoreapp2.1\EmailService.runtimeconfig.dev.json
+D:\SchoolPanda\EmailService\EmailService\bin\Debug\netcoreapp2.1\EmailService.dll
+D:\SchoolPanda\EmailService\EmailService\bin\Debug\netcoreapp2.1\SendServiceApi.dll
+D:\SchoolPanda\EmailService\EmailService\obj\Debug\netcoreapp2.1\EmailService.csprojAssemblyReference.cache
+D:\SchoolPanda\EmailService\EmailService\obj\Debug\netcoreapp2.1\EmailService.csproj.CoreCompileInputs.cache
+D:\SchoolPanda\EmailService\EmailService\obj\Debug\netcoreapp2.1\EmailService.AssemblyInfoInputs.cache
+D:\SchoolPanda\EmailService\EmailService\obj\Debug\netcoreapp2.1\EmailService.AssemblyInfo.cs
+D:\SchoolPanda\EmailService\EmailService\obj\Debug\netcoreapp2.1\EmailService.csproj.CopyComplete
+D:\SchoolPanda\EmailService\EmailService\bin\Debug\netcoreapp2.1\EmailService.pdb
+D:\SchoolPanda\EmailService\EmailService\obj\Debug\netcoreapp2.1\EmailService.dll
+D:\SchoolPanda\EmailService\EmailService\obj\Debug\netcoreapp2.1\EmailService.pdb
+D:\SchoolPanda\EmailService\EmailService\obj\Debug\netcoreapp2.1\EmailService.RazorAssemblyInfo.cache
+D:\SchoolPanda\EmailService\EmailService\obj\Debug\netcoreapp2.1\EmailService.RazorAssemblyInfo.cs
+D:\SchoolPanda\EmailService\EmailService\obj\Debug\netcoreapp2.1\EmailService.RazorTargetAssemblyInfo.cache
