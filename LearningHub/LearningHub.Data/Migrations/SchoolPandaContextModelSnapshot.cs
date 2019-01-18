@@ -36,7 +36,7 @@ namespace LearningHub.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Marks");
+                    b.ToTable("Questions");
                 });
 #pragma warning restore 612, 618
         }

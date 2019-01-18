@@ -7,6 +7,7 @@ using SchoolPanda.Application.Logic;
 using SchoolPandaIntegrationAPI.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 
 namespace SchoolPandaIntegrationAPI.Controllers
 {
@@ -155,11 +156,28 @@ namespace SchoolPandaIntegrationAPI.Controllers
         }
 
         [HttpPost]
+        [Route("/api/v1/addMark")]
+        public ActionResult<HttpResponse> AddMark([FromBody]AddMArk addMark)
+        {
+            var markDto = (AddMarkDto)new AddMarkDto().InjectFrom(addMark);
+            _userManagementMicroservice.AddMark(markDto);
+            return Ok();
+        }
+
+        //[HttpPost]
+        //[Route("/api/v1/getUserMarks")]
+        //public ActionResult<List<CourseModel>> GetUserMarks([FromBody]int id)
+        //{
+        //    return _userManagementMicroservice.GetUserCourses(id).Select(x => (CourseModel)new CourseModel().InjectFrom(x)).ToList();
+        //}
+
+        [HttpPost]
         [Route("/api/v1/login")]
         public ActionResult<HttpResponse> Login([FromBody] LoginModel loginModel)
         {
-            _userManagementMicroservice.Login(loginModel.Username, loginModel.Password);
-            return Ok();
+            var login = _userManagementMicroservice.Login(loginModel.Username, loginModel.Password);
+            if(login) return Ok();
+            return StatusCode((int)HttpStatusCode.Forbidden, "");
         }
     }
 }

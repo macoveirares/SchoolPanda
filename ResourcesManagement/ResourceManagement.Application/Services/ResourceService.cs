@@ -51,7 +51,8 @@ namespace ResourceManagement.Application.Services
         {
             var details = new ResourcesDetails();
             var courses = userManagementMicroservice.GetCourseByUser(userId);
-            var resources = _resourceRepository.Query(a => courses.Select(b => b.Id).ToList().Contains(a.CourseId.Value)).ToList();
+            var coursesIds = courses.Select(b => b.Id).ToList();
+            var resources = _resourceRepository.Query(a => coursesIds.Contains(a.CourseId.Value)).ToList();
             details.Resources = new List<ResourceDetails>();
             foreach (var item in resources)
             {

@@ -71,7 +71,8 @@ namespace UsersManagement.Application.Services
         public List<MarkDTO> GetUserMarks(int userId)
         {
             var user = userRepository.Query(x => x.Id == userId).FirstOrDefault();
-            return user.Marks.Select(x => (MarkDTO)new MarkDTO().InjectFrom(x)).ToList();
+            var marks = markRepository.Query(a => a.UserId == user.Id);
+            return marks.Select(x => (MarkDTO)new MarkDTO().InjectFrom(x)).ToList();
         }
     }
 }

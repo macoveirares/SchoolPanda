@@ -22,12 +22,14 @@ namespace UsersManagement.Application.Services
         private readonly IRepository<Course> courseRepository;
         private readonly IRepository<User> userRepository;
         private readonly IUnitOfWork unitOfWork;
+        private readonly IRepository<Domain.Entities.UserToCourse> _usersToCoursesRepository;
 
-        public CourseService(IRepository<Course> courseRepository, IRepository<User> userRepository, IUnitOfWork unitOfWork)
+        public CourseService(IRepository<Course> courseRepository, IRepository<User> userRepository, IUnitOfWork unitOfWork, IRepository<Domain.Entities.UserToCourse> usersToCoursesRepository)
         {
             this.courseRepository = courseRepository;
             this.userRepository = userRepository;
             this.unitOfWork = unitOfWork;
+            _usersToCoursesRepository = usersToCoursesRepository;
         }
 
         public void CreateCourse(CourseDTO course)
@@ -79,7 +81,9 @@ namespace UsersManagement.Application.Services
         public List<CourseDTO> GetCoursesByUser(int userId)
         {
             var user = userRepository.Query(x => x.Id == userId).FirstOrDefault();
-            return user.Courses.Select(x => (CourseDTO)new CourseDTO().InjectFrom(x.Course)).ToList();
+            var coursesIds = _usersToCoursesRepository.Query(a => a.UserId == user.Id).Select(a=> a.CourseId).ToList();
+            var courses = courseRepository.Query(a => coursesIds.Contains(a.Id)).ToList();
+            return courses.Select(a => (CourseDTO)new CourseDTO().InjectFrom(a)).ToList();
         }
     }
 }

@@ -1,6 +1,8 @@
-﻿namespace UsersManagement.Domain.Entities
+﻿using UsersManagement.Domain.Infrastructure;
+
+namespace UsersManagement.Domain.Entities
 {
-    public class UserToCourse
+    public class UserToCourse : BaseEntity
     {
         public int UserId { get; set; }
         public User User { get; set; }

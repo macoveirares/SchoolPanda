@@ -1,6 +1,10 @@
-﻿using LearningHub.Data.Infrastructure;
+﻿using LearningHub.Application.DTO;
+using LearningHub.Data.Infrastructure;
 using LearningHub.Domain.Entities;
+using Omu.ValueInjecter;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace LearningHub.Application.Services
 {
@@ -8,8 +12,10 @@ namespace LearningHub.Application.Services
     {
         void AddQuestion(string question, int userId, int type, int addressedTo);
         void AddAnswer();
-        void GetQuestions();
+        List<QuestionDto> GetQuestions(int userId, int type);
         void GetPrivateQuestions();
+        void AnswerQuestion(int Id, string answer, int type, int profId);
+        List<QuestionDto> GetPrivatequestionsForProf(int addressedTo);
     }
 
     class QuestionsService : IQuestionsService
@@ -30,7 +36,8 @@ namespace LearningHub.Application.Services
 
         public void AddQuestion(string question, int userId, int type, int addressedTo)
         {
-            var questionEntity = new Questions() {
+            var questionEntity = new Questions()
+            {
                 Question = question,
                 UserId = userId,
                 Type = type,
@@ -40,19 +47,54 @@ namespace LearningHub.Application.Services
             _unitOfWork.Save();
         }
 
+        public void AnswerQuestion(int Id, string answer, int type, int profId)
+        {
+            var questionEntity = _questionsRepository.GetById(Id);
+            if (questionEntity == null) return;
+
+            questionEntity.Answer = answer;
+            questionEntity.Type = type;
+            questionEntity.AddressedToUserId = profId;
+            _questionsRepository.Update(questionEntity);
+            _unitOfWork.Save();
+        }
+
         public void GetPrivateQuestions()
         {
 
         }
 
-        public void GetPrivatequestionsForProf()
+        public List<QuestionDto> GetPrivatequestionsForProf(int addressedTo)
         {
-
+            var entities = _questionsRepository.Query(a => a.AddressedToUserId == addressedTo);
+            var result = new List<QuestionDto>();
+            foreach (var item in entities)
+            {
+                result.Add((QuestionDto)new QuestionDto().InjectFrom(item));
+            }
+            return result;
         }
 
-        public void GetQuestions()
+        public List<QuestionDto> GetQuestions(int userId, int type)
         {
-            throw new NotImplementedException();
+            var entities = new List<Questions>();
+            if (userId == 0 && type == 1)
+            {
+               entities = _questionsRepository.Query(a => a.Type == type).ToList();
+            }
+            else if(userId != 0)
+            {
+                entities = _questionsRepository.Query(a => a.UserId == userId && a.Type == type).ToList();
+            }
+
+            var result = new List<QuestionDto>();
+            foreach (var item in entities)
+            {
+                result.Add((QuestionDto)new QuestionDto().InjectFrom(item));
+            }
+            return result;
         }
+
+
     }
 }

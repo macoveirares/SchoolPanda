@@ -165,7 +165,8 @@ namespace UsersManagement.Application.Services
         public List<AttendanceDTO> GetUserAttendances(int userId)
         {
             var user = userRepository.Query(x => x.Id == userId).FirstOrDefault();
-            return user.StudentAttendances.Select(x => (AttendanceDTO)new AttendanceDTO().InjectFrom(x)).ToList();
+            var attendenced = attendanceRepository.Query(a => a.StudentId == user.Id);
+            return attendenced.Select(x => (AttendanceDTO)new AttendanceDTO().InjectFrom(x)).ToList();
         }
 
         public List<AttendanceDTO> GetAttendancesByCourse(int courseId)
@@ -181,7 +182,7 @@ namespace UsersManagement.Application.Services
 
         public int Login(string username, string password)
         {
-            var user = userRepository.Query(x => x.Username == username && x.Password == x.Password).FirstOrDefault();
+            var user = userRepository.Query(x => x.Username == username && x.Password == password).FirstOrDefault();
             if (user != null)
             {
                 return user.Id;

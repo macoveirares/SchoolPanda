@@ -22,7 +22,8 @@ namespace SchoolPanda.Application.Logic
 
         public void CreateUser(UserDto user)
         {
-            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/addUser", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(user)));
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/addUser", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(user),
+                Encoding.UTF8, "application/json"));
             var result = request.Result;
             //check status code
         }
@@ -43,7 +44,8 @@ namespace SchoolPanda.Application.Logic
 
         public void AddRole(RoleDto role)
         {
-            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/addRole", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(role), Encoding.UTF8, "application/json"));
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/addRole", 
+                new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(role), Encoding.UTF8, "application/json"));
             var result = request.Result;
             //check status code
         }
@@ -112,7 +114,7 @@ namespace SchoolPanda.Application.Logic
 
         public List<MarkDto> GetUserMarks(int id)
         {
-            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getUserMarks", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(id)));
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getUserMarks", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(id), Encoding.UTF8, "application/json"));
             var result = request.Result;
             var marksList = result.Content.ReadAsStringAsync().Result;
             return Newtonsoft.Json.JsonConvert.DeserializeObject<List<MarkDto>>(marksList);
@@ -121,7 +123,7 @@ namespace SchoolPanda.Application.Logic
 
         public List<AttendanceDto> GetUserAttendances(int id)
         {
-            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getUserAttendances", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(id)));
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getUserAttendances", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(id), Encoding.UTF8, "application/json"));
             var result = request.Result;
             var attendancesList = result.Content.ReadAsStringAsync().Result;
             return Newtonsoft.Json.JsonConvert.DeserializeObject<List<AttendanceDto>>(attendancesList);
@@ -129,7 +131,7 @@ namespace SchoolPanda.Application.Logic
 
         public List<CourseDto> GetUserCourses(int id)
         {
-            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getCoursesByUser", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(id)));
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/getCoursesByUser", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(id), Encoding.UTF8, "application/json"));
             var result = request.Result;
             var coursesList = result.Content.ReadAsStringAsync().Result;
             return Newtonsoft.Json.JsonConvert.DeserializeObject<List<CourseDto>>(coursesList);
@@ -138,6 +140,13 @@ namespace SchoolPanda.Application.Logic
         public void AddAttendance(AttendanceDto attendance)
         {
             var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/addAttendance", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(attendance), Encoding.UTF8, "application/json"));
+            var result = request.Result;
+            //check status code
+        }
+
+        public void AddMark(AddMarkDto mark)
+        {
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/addMark", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(mark), Encoding.UTF8, "application/json"));
             var result = request.Result;
             //check status code
         }
@@ -156,10 +165,14 @@ namespace SchoolPanda.Application.Logic
             //check status code
         }
 
-        public void Login(string username, string password)
+        public bool Login(string username, string password)
         {
-            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/login", new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(new { username, password })));
+            var login = new LoginDto() { Username = username, Password = password};
+            var request = _httpClient.PostAsync($"{baseUSerManagementMicroserviceUrl}/api/v1/login", 
+                new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(login), Encoding.UTF8, "application/json"));
             var result = request.Result;
+            if (result.StatusCode == System.Net.HttpStatusCode.OK) return true;
+            return false;
             //check status code
         }
 

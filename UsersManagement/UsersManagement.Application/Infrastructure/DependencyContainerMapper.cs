@@ -18,6 +18,7 @@ namespace UsersManagement.Application.Infrastructure
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICourseService, CourseService>();
             services.AddScoped<IMarkService, MarkService>();
+            services.AddScoped<IUsersToCourses, UsersToCourses>();
         }
     }
 }

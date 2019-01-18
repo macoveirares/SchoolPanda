@@ -139,6 +139,8 @@ namespace UsersManagement.Data.Migrations
 
                     b.Property<int>("CourseId");
 
+                    b.Property<int>("Id");
+
                     b.HasKey("UserId", "CourseId");
 
                     b.HasIndex("CourseId");

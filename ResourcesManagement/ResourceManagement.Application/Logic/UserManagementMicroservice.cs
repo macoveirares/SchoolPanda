@@ -8,7 +8,7 @@ namespace ResourceManagement.Application.Logic
 {
     public class UserManagementMicroservice
     {
-        private readonly string baseUSerManagementMicroserviceUrl = "";
+        private readonly string baseUSerManagementMicroserviceUrl = "http://localhost:51677";
         private readonly HttpClient _httpClient;
 
         public UserManagementMicroservice(string baseUerManagementServiceUrl = null)
